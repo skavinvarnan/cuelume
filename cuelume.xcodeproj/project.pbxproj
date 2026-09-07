@@ -17,7 +17,7 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3096E3B1304E7D9100E2AC5D /* CuelumeDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CuelumeDemo;
+			path = Demo/CuelumeDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -101,7 +101,7 @@
 			mainGroup = 3096E3A6304E7D9100E2AC5D;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				3096E3C0304E7D9200E2AC5D /* XCLocalSwiftPackageReference ".." */,
+				3096E3C0304E7D9200E2AC5D /* XCLocalSwiftPackageReference "." */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3096E3B0304E7D9100E2AC5D /* Products */;
@@ -343,16 +343,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		3096E3C0304E7D9200E2AC5D /* XCLocalSwiftPackageReference ".." */ = {
+		3096E3C0304E7D9200E2AC5D /* XCLocalSwiftPackageReference "." */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ..;
+			relativePath = .;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		3096E3C1304E7D9200E2AC5D /* Cuelume */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3096E3C0304E7D9200E2AC5D /* XCLocalSwiftPackageReference ".." */;
+			package = 3096E3C0304E7D9200E2AC5D /* XCLocalSwiftPackageReference "." */;
 			productName = Cuelume;
 		};
 /* End XCSwiftPackageProductDependency section */

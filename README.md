@@ -71,7 +71,7 @@ Requires iOS 26, macOS 26, tvOS 26, or visionOS 26.
 
 ## Demo
 
-Open `Demo/cuelume.xcodeproj` (scheme **CuelumeDemo**) and run the app. It lists every cue; tap a row to hear it.
+Open `cuelume.xcodeproj` (scheme **CuelumeDemo**) and run the app. It lists every cue; tap a row to hear it.
 
 ## How it works
 
