@@ -6,14 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3096E3C2304E7D9200E2AC5D /* Cuelume in Frameworks */ = {isa = PBXBuildFile; productRef = 3096E3C1304E7D9200E2AC5D /* Cuelume */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		3096E3AF304E7D9100E2AC5D /* cuelume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cuelume.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3096E3AF304E7D9100E2AC5D /* CuelumeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuelumeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		3096E3B1304E7D9100E2AC5D /* cuelume */ = {
+		3096E3B1304E7D9100E2AC5D /* CuelumeDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = cuelume;
+			path = CuelumeDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3096E3C2304E7D9200E2AC5D /* Cuelume in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +37,7 @@
 		3096E3A6304E7D9100E2AC5D = {
 			isa = PBXGroup;
 			children = (
-				3096E3B1304E7D9100E2AC5D /* cuelume */,
+				3096E3B1304E7D9100E2AC5D /* CuelumeDemo */,
 				3096E3B0304E7D9100E2AC5D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +45,7 @@
 		3096E3B0304E7D9100E2AC5D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3096E3AF304E7D9100E2AC5D /* cuelume.app */,
+				3096E3AF304E7D9100E2AC5D /* CuelumeDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +53,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3096E3AE304E7D9100E2AC5D /* cuelume */ = {
+		3096E3AE304E7D9100E2AC5D /* CuelumeDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3096E3BA304E7D9200E2AC5D /* Build configuration list for PBXNativeTarget "cuelume" */;
+			buildConfigurationList = 3096E3BA304E7D9200E2AC5D /* Build configuration list for PBXNativeTarget "CuelumeDemo" */;
 			buildPhases = (
 				3096E3AB304E7D9100E2AC5D /* Sources */,
 				3096E3AC304E7D9100E2AC5D /* Frameworks */,
@@ -61,13 +66,14 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				3096E3B1304E7D9100E2AC5D /* cuelume */,
+				3096E3B1304E7D9100E2AC5D /* CuelumeDemo */,
 			);
-			name = cuelume;
+			name = CuelumeDemo;
 			packageProductDependencies = (
+				3096E3C1304E7D9200E2AC5D /* Cuelume */,
 			);
-			productName = cuelume;
-			productReference = 3096E3AF304E7D9100E2AC5D /* cuelume.app */;
+			productName = CuelumeDemo;
+			productReference = 3096E3AF304E7D9100E2AC5D /* CuelumeDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -94,12 +100,15 @@
 			);
 			mainGroup = 3096E3A6304E7D9100E2AC5D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3096E3C0304E7D9200E2AC5D /* XCLocalSwiftPackageReference ".." */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3096E3B0304E7D9100E2AC5D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3096E3AE304E7D9100E2AC5D /* cuelume */,
+				3096E3AE304E7D9100E2AC5D /* CuelumeDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -178,7 +187,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -236,7 +245,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -322,7 +331,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3096E3BA304E7D9200E2AC5D /* Build configuration list for PBXNativeTarget "cuelume" */ = {
+		3096E3BA304E7D9200E2AC5D /* Build configuration list for PBXNativeTarget "CuelumeDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3096E3BB304E7D9200E2AC5D /* Debug */,
@@ -332,6 +341,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		3096E3C0304E7D9200E2AC5D /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3096E3C1304E7D9200E2AC5D /* Cuelume */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3096E3C0304E7D9200E2AC5D /* XCLocalSwiftPackageReference ".." */;
+			productName = Cuelume;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3096E3A7304E7D9100E2AC5D /* Project object */;
 }

@@ -1,0 +1,12 @@
+.DS_Store
+.build/
+.swiftpm/
+Packages/
+xcuserdata/
+DerivedData/
+.netrc
+*.xcuserstate
+*.o
+*.dia
+*.swiftdeps
+*.swiftconstvalues
