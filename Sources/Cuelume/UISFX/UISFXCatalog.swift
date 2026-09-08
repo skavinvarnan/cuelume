@@ -158,7 +158,7 @@ public enum UISFXPack: String, CaseIterable, Identifiable, Sendable {
 
     var definition: UISFXPackDefinition {
         typealias Harmonic = UISFXHarmonic
-        switch self {
+        return switch self {
         case .minimal:
             UISFXPackDefinition(
                 waveform: .sine,
@@ -764,7 +764,7 @@ public enum UISFXCue: String, CaseIterable, Identifiable, Sendable {
 
     var definition: UISFXCueDefinition {
         typealias Note = UISFXPatternNote
-        switch self {
+        return switch self {
         case .hover:
             UISFXCueDefinition(
                 duration: 0.12,

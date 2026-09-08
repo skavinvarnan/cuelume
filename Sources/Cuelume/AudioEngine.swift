@@ -33,7 +33,10 @@ final class AudioEngine {
     init() {
         // Force-unwrapped because these arguments are always a valid format.
         format = AVAudioFormat(standardFormatWithSampleRate: 44_100, channels: 2)!
-        engine.prepare()
+        // Do not prepare() here. It initializes the I/O graph against the hardware
+        // format and throws an NSException if the audio session is not active yet —
+        // which it isn't when CuelumePlayer.shared is first touched from a SwiftUI
+        // view during the first layout pass.
     }
 
     /// Renders a sound now so the first play does not pay for it.
@@ -52,10 +55,7 @@ final class AudioEngine {
         guard rendered.frameCount > 0, let buffer = makeBuffer(rendered) else { return nil }
 
         do {
-            try configureSessionIfNeeded()
-            if !engine.isRunning {
-                try engine.start()
-            }
+            try ensureRunning()
         } catch {
             return nil
         }
@@ -134,6 +134,19 @@ final class AudioEngine {
     }
 
     // MARK: - Session and buffers
+
+    /// Session first, then a node, then start. Starting an empty graph, or
+    /// preparing before the session is active, throws an NSException that Swift
+    /// `try` cannot catch.
+    private func ensureRunning() throws {
+        try configureSessionIfNeeded()
+        if attachedPlayerCount == 0 {
+            idlePlayers.append(makePlayer())
+        }
+        if !engine.isRunning {
+            try engine.start()
+        }
+    }
 
     /// Configured once rather than on every play, which used to reassert the
     /// category and reactivate the session for each tap.

@@ -18,7 +18,7 @@ That is 989 sounds, all generated on device from recipes ported from the origina
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/skavinvarnan/cuelume.git", from: "0.1.1")
+    .package(url: "https://github.com/skavinvarnan/cuelume.git", from: "0.1.2")
 ]
 ```
 

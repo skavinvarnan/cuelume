@@ -57,8 +57,10 @@ private func check(_ sound: RenderedSound, _ label: String, minimumPeak: Float =
     #expect(sound.left.count == sound.right.count, "\(label) channels differ in length")
     #expect(sound.peak > minimumPeak, "\(label) was silent (peak \(sound.peak))")
     #expect(sound.peak <= 1.0, "\(label) clipped (peak \(sound.peak))")
-    #expect(sound.left.allSatisfy(\.isFinite), "\(label) produced a non-finite sample")
-    #expect(sound.right.allSatisfy(\.isFinite), "\(label) produced a non-finite sample")
+    let leftFinite = sound.left.allSatisfy(\.isFinite)
+    let rightFinite = sound.right.allSatisfy(\.isFinite)
+    #expect(leftFinite, "\(label) produced a non-finite sample")
+    #expect(rightFinite, "\(label) produced a non-finite sample")
 }
 
 @Test func everyCuelumeSoundRendersAudibleSamples() {

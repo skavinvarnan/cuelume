@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.1.2
+
+### Fixed
+
+- Crash on launch when `CuelumePlayer.shared` was first touched from a SwiftUI
+  view. `AVAudioEngine.prepare()` ran before the audio session was active and
+  threw an NSException. The engine now starts on the first `play()`, after the
+  session is configured and a player node is attached.
+- Compile error in the uisfx pack and cue definition getters (`Missing return
+  in getter`) when a `typealias` made the getter a multi-statement body.
+
+### Compatibility
+
+Public API is unchanged from 0.1.1.
+
 ## 0.1.1
 
 Adds two more sound libraries alongside the original CueLume palette. 17 sounds

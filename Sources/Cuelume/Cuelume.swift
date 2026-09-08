@@ -27,7 +27,7 @@ import Observation
 @MainActor
 public enum Cuelume {
     /// The package version, matching the released tag.
-    public static let version = "0.1.1"
+    public static let version = "0.1.2"
 
     /// Plays a CueLume cue. Defaults to `chime`.
     /// `volume` is a 0...1 multiplier for this play only, on top of the global volume.
