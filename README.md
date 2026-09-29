@@ -90,7 +90,7 @@ Cuelume.prewarm([.cuelume(.tick), .uisfx(.press, pack: .minimal)])
 
 The cache holds about 8 MB of audio and drops the least recently used sound beyond that.
 
-Requires iOS 26, macOS 26, tvOS 26, or visionOS 26.
+Requires iOS 18, macOS 15, tvOS 18, or visionOS 2.
 
 ## Loudness
 

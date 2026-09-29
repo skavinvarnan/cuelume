@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.3
+
+### Compatibility
+
+- Minimum platforms lowered to iOS 18, macOS 15, tvOS 18 and visionOS 2.
+
 ## 0.1.2
 
 ### Fixed
